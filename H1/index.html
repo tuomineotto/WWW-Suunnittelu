@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H1 Kotitehtävä</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 450px;
+            margin-bottom: 30px;
+        }
+
+        tr, td {
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        td {
+            text-align: center;
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 95%;
+            padding: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            padding: 8px 16px;
+            margin: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label for="enimi">Anna etunimesi: </label></td>
+                <td><input type="text" name="etunimi" id="enimi" placeholder="Etunimi"></td>
+            </tr>
+            <tr>
+                <td><label for="enimi">Anna sukunimesi: </label></td>
+                <td><input type="text" name="sukunimi" id="enimi"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Anna sähköpostiosoitteesi: </label></td>
+                <td><input type="email" name="sposti" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="pwd">Anna salasana: </label></td>
+                <td><input type="password" name="salasana" id="pwd"></td>
+            </tr>
+            <tr>
+                <td><label for="saika">Anna syntymäaika: </label></td>
+                <td><input type="date" name="syntymaaika" id="saika"></td>
+            </tr>
+            <tr>
+                <td>Ruokailut: </td>
+                <td>
+                    <input type="checkbox" name="aamu" id="ap">
+                    <label for="ap">Aamupala</label><br>
+            
+                    <input type="checkbox" name="lounas" id="lou">
+                    <label for="lou">Lounas</label><br>
+
+                    <input type="checkbox" name="iltapala" id="ip">
+                    <label for="ip">Iltapala</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Sukupuoli:</td>
+                <td>
+                    <input type="radio" name="spuoli" id="f">
+                    <label for="f">Nainen</label><br>
+
+                    <input type="radio" name="spuoli" id="m">
+                    <label for="m">Mies</label><br>
+
+                    <input type="radio" name="spuoli" id="o">
+                    <label for="o">Muu</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Erityistoiveet:</td>
+                <td><textarea name="toiveet" id="area" cols="30" rows="10" placeholder="Kirjoita erityistoiveesi tähän"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="valinta">Valitse jokin:</label></td>
+                <td>
+                    <select name="valinta" id="valinta" multiple>
+                        <option value="OPT_1">Valinta 1</option>
+                        <option value="OPT_2">Valinta 2</option>
+                        <option value="OPT_3">Valinta 3</option>
+                        <option value="OPT_4">Valinta 4</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="buttons">
+                    <input type="submit" value="Lähetä">
+                    <!--<input type="reset" value="Tyhjennä"> -->
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
